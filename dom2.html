@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Assignment 2</title>
+</head>
+<body>
+<table id="dynamic-table" border="1">
+</table>
+<br>
+<input type="button" onclick="insert_Row()"value="Add row">
+<script>
+    function insert_Row()
+       {
+        var table = document.getElementById("dynamic-table");
+        var row = table.insertRow(0);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        cell1.innerHTML = "CELL";
+        cell2.innerHTML = "CELL";
+        }
+</script>
+</body>
+</html>
